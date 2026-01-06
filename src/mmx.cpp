@@ -1270,7 +1270,7 @@ int main(int argc, char** argv)
 				}
 			}
 			else {
-				std::cerr << "Help: mmx wallet [show | get | log | send | send_from | offer | trade | accept | buy | sell | swap | mint | deploy | exec | transfer | create | new | import | remove | accounts | keys | lock | unlock | plotnft]" << std::endl;
+				std::cerr << "Help: mmx wallet [show | get | log | send | send_from | offer | trade | accept | buy | sell | swap | mint | deploy | exec | transfer | create | new | import | remove | accounts | keys | lock | unlock | plotnft | log_csv]" << std::endl;
 			}
 
 			if(tx) {
@@ -1820,7 +1820,7 @@ int main(int argc, char** argv)
 				std::cout << "Price: " << price << " " << symbols[1] << " / " << symbols[0] << std::endl;
 			}
 			else {
-				std::cerr << "Help: mmx node [info | peers | tx | get | fetch | balance | history | offers | swaps | swap | sync | revert | call | send | read | dump | dump_code]" << std::endl;
+				std::cerr << "Help: mmx node [info | peers | tx | get | fetch | balance | history | offers | swaps | swap | sync | revert | call | send | read | dump | dump_code | history_csv]" << std::endl;
 			}
 		}
 		else if(module == "farm" || module == "harvester")
