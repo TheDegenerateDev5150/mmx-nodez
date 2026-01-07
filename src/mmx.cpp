@@ -141,7 +141,7 @@ void show_history_csv(std::vector<mmx::tx_entry_t> history, mmx::NodeClient& nod
 				<< "," << symbol << "," << entry.amount << "," << in_out << "," << entry.address << "," << entry.txid
 				<< "," << entry.time_stamp / 1000 << "," << vnx::get_date_string_ex("%Y-%m-%dT%H:%M", false, entry.time_stamp / 1000);
 
-		std::cout << ",\"" << (entry.memo ? *entry.memo : "") << "\"";
+		std::cout << ",\"" << (entry.memo ? vnx::string_subs(*entry.memo, "\"", "\"\"") : "") << "\"";
 		std::cout << std::endl;
 	}
 }
